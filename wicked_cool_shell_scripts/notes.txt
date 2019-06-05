@@ -1,0 +1,8 @@
+### Ch0 ###
+
+"~/.bashrc" is loaded into the environment before "~/.profile"
+
+    Tested this by putting "echo this is .filename" in ~/.bashrc and ~/.profile 
+    and seeing which ones appeared first in a new terminal.
+
+

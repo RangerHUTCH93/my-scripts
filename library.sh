@@ -1,0 +1,1 @@
+wicked_cool_shell_scripts/WickedCoolShellScripts2e_resources_updated/wicked_cool_shell_scripts_2e-master/1/library.sh

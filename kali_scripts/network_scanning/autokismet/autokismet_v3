@@ -1,0 +1,24 @@
+#!/bin/bash
+
+clear
+
+echo
+echo "plug in gps and external wnic."
+echo
+echo "After executing this, Kismet will open in a new terminal."
+echo
+echo "1.) In Kismet, press 'yes' to start the server."
+echo "2.) In a few moments you'll be prompted to add a source."
+echo "3.) Add 'wlan1'."
+echo
+read -p "press enter to continue..."
+
+service bluetooth stop
+service network-manager stop
+
+gpsd -N -n -D 3 /dev/ttyUSB0 &> /dev/null &
+P1=$!
+sleep 3
+gnome-terminal -e "bash -c \kismet; exec bash" &> /dev/null &
+P2=$!
+wait $P1 $P2

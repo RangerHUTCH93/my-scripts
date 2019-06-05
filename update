@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cat << EOF
+
+This script performs "apt-get update" and 
+"apt-get upgrade".
+
+Also updates VirtualBox and youtube-dl.
+
+EOF
+
+read -p "Press Enter to continue: "
+
+echo
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install virtualbox
+pip install --upgrade youtube-dl

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo
+echo Please run this in the directory with your Kismet output files.
+echo
+echo Please include file extensions.
+echo
+
+read -p "Please type/paste your .netxml file: " netxmlFile
+echo
+giskismet -x "$netxmlFile"
+
+echo
+
+read -p "Please name your .kml file: " kml
+giskismet -q "select * from wireless" -o "$kml"
+
+echo
+echo your .kml file is ready!
+echo

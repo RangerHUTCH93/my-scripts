@@ -1,0 +1,8 @@
+setup.py
+Unquote_Directory.egg-info/PKG-INFO
+Unquote_Directory.egg-info/SOURCES.txt
+Unquote_Directory.egg-info/dependency_links.txt
+Unquote_Directory.egg-info/entry_points.txt
+Unquote_Directory.egg-info/top_level.txt
+unquote/__init__.py
+unquote/main.py

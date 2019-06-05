@@ -1,0 +1,4 @@
+#!/bin/bash
+
+service NetworkManager restart
+service wpa_supplicant restart

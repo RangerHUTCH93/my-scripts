@@ -1,0 +1,6 @@
+*This directory contains scripts (or scripts that act as functions) that
+ act as a "standard library" of code for Bash, which Bash originally lacks.
+
+*This directory is in the $PATH specified in ~/.bashrc;
+
+	export PATH="$PATH:$HOME/Scripts/wicked_cool_shell_scripts/01_Missing_Code/:$PATH"

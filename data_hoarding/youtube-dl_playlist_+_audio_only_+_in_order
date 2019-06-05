@@ -1,0 +1,4 @@
+## https://duckduckgo.com/?q=%22youtube-dl%22+download+playlist+to+mp3&t=hg&ia=qa
+### below is my attempt to download an audio playlist in the correct/original order ###
+
+youtube-dl --extract-audio --audio-format mp3 -o "%(playlist_index)s-%(title)s.%(ext)s" <url to playlist>

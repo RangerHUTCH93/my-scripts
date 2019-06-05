@@ -1,0 +1,3 @@
+[console_scripts]
+ws = website_scrubber.main:main
+

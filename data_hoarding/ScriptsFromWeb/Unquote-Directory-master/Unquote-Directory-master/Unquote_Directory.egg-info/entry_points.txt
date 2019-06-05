@@ -1,0 +1,3 @@
+[console_scripts]
+unquote = unquote.main:main
+

@@ -1,0 +1,9 @@
+setup.py
+Website_Scrubber.egg-info/PKG-INFO
+Website_Scrubber.egg-info/SOURCES.txt
+Website_Scrubber.egg-info/dependency_links.txt
+Website_Scrubber.egg-info/entry_points.txt
+Website_Scrubber.egg-info/requires.txt
+Website_Scrubber.egg-info/top_level.txt
+website_scrubber/__init__.py
+website_scrubber/main.py

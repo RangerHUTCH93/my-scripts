@@ -1,0 +1,5 @@
+*When finished with book, delete unzipped copy of the "online resources".
+
+*When I call "echo $PATH" from the terminal, why is is showing duplicates?
+
+*Try changing the order of "export PATH" entries in ~/.bashrc so a script can call another script from itself appropriately.

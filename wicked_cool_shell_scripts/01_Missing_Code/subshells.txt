@@ -1,0 +1,24 @@
+If you invoke a shell script within a shell, by default that script is 
+run within its own subshell. You can see this experimentally here:
+
+$ echo "test=2" >> tinyscript.sh
+$ chmod +x tinyscript.sh
+$ test=1
+$ ./tinyscript.sh
+$ echo $test
+1
+
+The script 'tinyscript.sh changed the value of the variable test, but 
+only within the subshell running the script, so the value of the 
+existing 'test' variable in our shell's environment was not affected. 
+if instead you run the script using the dot (.) notation to source 
+the script, then it is handeled as though each command in the script 
+were typed directly into the current shell:
+
+$ . tinyscript.sh
+$ echo $test
+2
+
+The . notation is actually identical to the 'source' command in 
+bash; we're using . because its more portable across different 
+POSIX shells.

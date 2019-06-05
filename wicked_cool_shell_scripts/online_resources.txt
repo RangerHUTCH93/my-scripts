@@ -1,0 +1,2 @@
+The source files for all the shell scripts are available at
+ "https://www.nostarch.com/wcss2/"
